@@ -1,0 +1,12 @@
+name: PubSub
+main: PubSub\PubSub
+version: 1.0.0
+api: 2.0.0
+
+commands:
+ pub:
+  description: "publish string to MQtt topic"
+  usage: "/pub topic string"
+ sub:
+  description: "subscribe to topic"
+  usage: "/sub topic" 

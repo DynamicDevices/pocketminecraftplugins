@@ -1,0 +1,7 @@
+
+PubSub
+======
+
+Example plugin to show adding a new command to PocketMine-MP to publish to an MQtt broker
+
+Leverages phpMQTT by Andrew Milsted
