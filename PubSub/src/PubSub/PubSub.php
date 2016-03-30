@@ -6,8 +6,14 @@ require("phpMQTT.php");
 use pocketmine\plugin\PluginBase;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
+use pocketmine\utils\TextFormat as TF;
 
 class PubSub extends PluginBase{
+
+    public function onEnable() {
+        $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
+        $this->getLogger()->info(TF::AQUA . "PubSub v1.1.0" . TF::GREEN . " by " . TF::YELLOW . "Alex J Lennon <ajlennon@dynamicdevices.co.uk>" . TF::GREEN . ", Enabled successfully!");
+    }
 
     public function onCommand(CommandSender $sender, Command $command, $label, array $args) {
         switch($command->getName()) {

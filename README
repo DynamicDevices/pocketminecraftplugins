@@ -4,4 +4,7 @@ PubSub
 
 Example plugin to show adding a new command to PocketMine-MP to publish to an MQtt broker
 
+Plugin also registers an event listener which publishes place/interact/break events for Wool blocks with a x,y,z coordinate pair in the payload
+
 Leverages phpMQTT by Andrew Milsted
+          WorldProtector by Jack Noordhuis
